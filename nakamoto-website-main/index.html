@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nakamoto Mining</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logos/YAMA.svg" alt="Homepage">
+                        
+                    </a>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#services" class="smoothscroll">ATS</a></li>
+                        <li><a href="#careers" class="smoothscroll">Resume Generator</a></li>
+                        <li><a href="#contact" class="smoothscroll">Plans/billing</a></li>
+                        <li><a href="#about" class="smoothscroll">Meet Our Team</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="login.html">
+                            <img src="images/icons/services/profile-circle-svgrepo-com.svg" width="48" height="48" viewBox="0 0 24 24" style="margin-top: 20px;">
+                            <span class="screen-reader-text">Log In</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/nakamoto-llc/">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24" style="margin-top: 30px;">
+                                <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path>
+                            </svg>
+                            <span class="screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/NakaMining">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="margin-top: 30px; fill:rgba(0, 0, 0, 1);transform:;-ms-filter:" ><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row">
+                <div class="column">
+                    <div class="s-intro__top-block">
+                        <span class="s-intro__bg"></span>
+                        <div class="main-logo-container">
+                            <img src="images/logos/yama hindu mythology.jpg" alt="Nakamoto Mining" class="main-logo">
+                            <div id="logo-container">
+                                <img class="logo-text" src="images/logos/YAMA.svg" alt="Nakamoto" style="width: 500px">
+                            </div>
+                            <h4 class="logo-footer"> </h4>
+                        </div>
+
+                        <a href="#services" class="s-intro__scroll-down smoothscroll">
+                            <span>Scroll Down</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(180deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"><path d="M21 11L6.414 11 11.707 5.707 10.293 4.293 2.586 12 10.293 19.707 11.707 18.293 6.414 13 21 13z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-x-center s-intro__about-wrap">
+                <div class="column s-intro__about">
+                    <h2 class="s-intro__about-title">What is Yama.</h2>
+
+                    <p>
+                        Yama is an advanced ATS (Applicant Tracking System) and resume generation product
+                        designed to streamline and optimize the hiring process. Utilizing cutting-edge AI technology,
+                        Yama offers a comprehensive suite of features tailored to meet the needs of students, companies, 
+                     and recruiters
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+                
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count"  style="font-size: 250%;">Resume Generation: </div>
+                    <h5></h5>
+                    <p>
+                        Yama generates tailored resumes by analyzing job 
+                        descriptions and existing resumes, ensuring that candidate presentations align
+                         perfectly with job requirements.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" style="font-size: 250%;">ATS Scoring:</div>
+                    <h5></h5>
+                    <p>
+                        Provides accurate ATS scores for resumes based on job descriptions, 
+                        helping recruiters quickly identify the best candidates for each role
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" style="font-size: 250%;">One-Stop Hiring:</div>
+                    <h5></h5>
+                    <p>
+                        Yama serves as a comprehensive destination for all your hiring needs, 
+                        from resume generation to candidate evaluation and selection.
+                    </p>
+                </div>
+                <div class="column stats__item" data-animate-el>
+                    <div class="stats__count" style="font-size: 250%;">Continuous Learning:</div>
+                    <h5></h5> 
+                    <p>
+                       Yama evolves with every interaction, refining its algorithms to deliver 
+                       increasingly precise and valuable insights over time.
+                    </p>
+                </div>
+    
+            </div> <!-- end about-stats -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # services
+        ================================================== -->
+        <section id="services" class="s-services target-section">
+
+            <div class="row section-header has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">ATS Checker</h3>
+                    <h1 class="text-display-title">
+                        ATS Checker
+                    </h1>
+                </div>
+            </div> <!-- end section-header -->
+    
+            <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--product-design"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">What is ATS</h3>
+                        <p>An ATS helps companies organize candidates  hiring and recruitment purposes. 
+                           These systems allow businesses of all sizes and across industries to collect candidate information, 
+                           organize prospects based on experience and skill set, and filter applicants.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--branding"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4">How our Checker Can help</h3>
+                        <p> We offer the ability to customize Yama's models based on your data, ensuring that our solutions meet the specific needs and nuances of your organization.
+                            We also make it easy integrate Yama with existing HR systems and job portals, ensuring a cohesive and efficient recruitment workflow.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--frontend"></span>
+                    </div>
+                    <div class="service-text">
+                        <label for="projects"><h3 class="h4">Input Job Description</h3></label>
+                            <input type="text" id="ATSJOB" name="ATSJOB">
+                            <input type="submit" value="Submit">
+                    </div>
+                </div>
+    
+                <div class="column service-item" data-animate-el>
+                    <div class="service-icon-block">
+                        <span class="service-icon service-icon--ecommerce"></span>
+                    </div>
+                    <div class="service-text">
+                        <h3 class="h4" style="margin-bottom: 50px;">Insert Resumes</h3>
+                            <form action="/action_page.php">
+                                <input type="file" id="myFile" name="filename">
+                                <input type="submit">
+                              </form>
+                       
+                    </div>
+                </div>    
+            </div> <!-- end services-list -->
+
+            <div class="row clients-outer" data-animate-block>
+                <div class="column lg-12">
+                    <h3 class="text-clients-title" data-animate-el>
+                       [ATS output here]
+                    </h3>
+
+                    <div class="swiper-container clients" data-animate-el>
+                        <div class="swiper-wrapper clients__content">
+                            <a href="https://bittensor.com" target="_blank" title="" class="swiper-slide clients__slide"><img src="images/stroked-logo.png" /></a>
+                            <a href="https://communeai.org" target="_blank" title="" class="swiper-slide clients__slide"><img src="images/logos/communeai.png" /></a>
+                            <a href="https://www.getbased.ai" target="_blank" title="" class="swiper-slide clients__slide"><img src="images/logos/basedai.png" /></a>
+                        </div>
+                    </div> <!-- end clients -->
+
+                </div> <!-- end column -->
+            </div> <!-- end clients-outer -->
+
+        </section> <!-- end s-services -->
+
+
+        <!-- ## careers
+        ================================================== -->
+        <section id="careers" class="s-contact target-section"s style="background-color: gtr#252529;">
+
+            <div class="row careers" data-animate-block>
+
+    
+                    
+    
+                        <div class="swiper-wrapper">
+                            
+                                <div class="career-slider__author">
+                                    <img src="images/heading-logo.png" alt="Nakamoto" class="career-slider__avatar">
+                                    <cite class="career-slider__cite">
+                                        <strong>Resume Generator</strong>
+                                        <h1 class="text-display-title">Some info about resume generator</h1>
+                                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnsd_Pz7vvtMmt8Xg7iogb0NRSMSyr-90ic-CRtxJdSxh4hw/viewform?embedded=true" width="800" height="400" frameborder="0" marginheight="0" marginwidth="0"  style="margin-left: 50px;">Loading…</iframe>
+                                        
+                                    </cite>
+                                </div>
+                               
+                            <!-- end career-slider__slide -->
+                    
+        
+                        </div> <!-- end swiper-wrapper -->
+    
+                    
+    
+                
+            </div> <!-- end row testimonials -->
+
+        </section> <!-- end s-careers -->
+
+        <!-- ## contact
+        ================================================== -->
+        <section id="contact" class="s-contact target-section">
+            <h1 style="align-items: center; position: absolute;padding-left: 350px;;">CHOOSE YOUR PLAN</h1>
+            <h2 style="color:#121314;"> . </h2>
+            <div class="row careers" data-animate-block>
+                <div class="column lg-12">
+    
+                    <div class="swiper-container career-slider" data-animate-el>
+                        
+                        <div class="swiper-wrapper">
+                            
+                            <a href="payment.html" class="career-slider__slide swiper-slide">
+                                <div class="career-slider__author">
+                                    <img src="images/icons/services/package-box-ui-4-svgrepo-com.svg" alt="Basic" style="width: 150px;">
+                                    <cite class="career-slider__cite">
+                                        <strong>Basic</strong>
+                                        <span>Includes Resume Generator</span>
+                                         <p>
+                                        15$ for 15 resumes
+                                        </p>
+                                    </cite>
+                                </div>
+                               
+                    
+                            </a> <!-- end career-slider__slide -->
+                            <a href="payment.html" class="career-slider__slide swiper-slide">
+                                <div class="career-slider__author">
+                                    <img src="images/icons/services/marketing-report-statistic-document-file-svgrepo-com (2).svg" alt="Sales" style="width: 150px;">
+                                    <cite class="career-slider__cite">
+                                        <strong>Sales</strong>
+                                        <span>Includes ATS Checker</span> 
+                                        <p>50$ for 100 ATS scores</p>
+                                    </cite>
+                                </div>
+                                   
+                            </a> <!-- end testimonial-slider__slide -->
+                            <a href="payment.html" class="career-slider__slide swiper-slide">
+                                <div class="career-slider__author">
+                                    <img src="images/icons/services/quality-parcel-svgrepo-com.svg" alt="Premium" style="width: 150px;">
+                                    <cite class="career-slider__cite">
+                                        <strong>Premium</strong>
+                                        <span>Gives acess to Both ATS Checker and Resume Generator</span>
+                                        <p>
+                                        150$ for unlimiited usage 
+                                        </p>
+                                    </cite>
+                                </div>
+                                
+                            </a> <!-- end testimonial-slider__slide -->
+                        
+        
+                        </div> <!-- end swiper-wrapper -->
+                        <div class="Monthly">
+                        <p>All plans billed Monthly</p>
+                        </div>
+    
+
+            <footer class="s-footer">
+
+                <div class="row s-footer__top">
+                    <div class="column lg-5 md-8 stack-on-700 s-footer__block contact-address">
+                        <h4 class="h6">Where to Find Us</h4>
+        
+                        <p>
+                        420 N May Street <br>
+                        Chicago, Illinois <br>
+                        60642  US
+                        </p>
+                    </div>
+
+                    <div class="column lg-3 md-4 stack-on-700 s-footer__block contact-social">
+                        <h4 class="h6">Follow Us</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="https://x.com/NakaMining">Twitter/X</a></li>
+                            <li><a href="https://www.linkedin.com/company/nakamoto-llc/">LinkedIn</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="column lg-3 md-12 s-footer__block contact-number">
+                        <h4 class="h6">Contact Us</h4>
+        
+                        <ul class="contact-list">
+                            <li><a href="mailto:luke@nakamotomining.ai">luke@nakamotomining.ai</a></li>
+                        </ul>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+                <div class="row s-footer__bottom">
+                    <div class="column ss-copyright">
+                        <span>© Copyright Tyndale 2021</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+
+                    <div class="ss-go-top">
+                        <a class="smoothscroll" title="Back to Top" href="#top">
+                            <span class="ss-go-top__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:rotate(90deg);-ms-filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"><path d="M6 4H18V6H6zM11 14L11 20 13 20 13 14 18 14 12 8 6 14z"></path></svg>
+                            </span>
+                            <span class="ss-go-top__text">Back to Top</span>
+                        </a>
+                    </div>
+                </div> <!-- end s-footer__top -->
+
+            </footer>
+
+        </section> <!-- end s-contact -->
+
+        <!-- ## works
+        ================================================== -->
+        <section id="about" class="s-works target-section">
+
+            <div class="row section-header section-header--dark has-bottom-sep">
+                <div class="column lg-12">
+                    <h3 class="text-pretitle">Meet Our Team</h3>
+                    <h2>Nakamoto is not just a team – it's a family dedicated to shaping the future.</h2>
+                </div>
+                <p>
+                    At Nakamoto, collaboration and innovation are our team's motto. Comprising experts in AI, 
+                    engineering, and blockchain, each member brings their unique blend of skills and passion 
+                    to the table. We thrive on collaboration, creativity, and a shared sense of purpose. 
+                    With our capes on, we tackle challenges head-on, push boundaries, and create pioneering 
+                    solutions that propel us forward in the ever-evolving landscape of technology.
+                </p>
+            </div> <!-- end section-header -->
+
+            <div class="row folio-list block-lg-one-third block-tab-one-half block-stack-on-550 collapse" data-animate-block>
+
+                <div class="column main-pic">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/team-pic.jpg" 
+                                     srcset="images/portfolio/team-pic.jpg 1x" alt="The Nakamoto team">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">Nakamoto</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/dj-set.jpg" 
+                                     srcset="images/portfolio/dj-set.jpg 1x" alt="Naga on the turn tables">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">Naga on the turn tables</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/leaders.jpg" 
+                                     srcset="images/portfolio/leaders.jpg 1x" alt="Nakamoto Founders Jack Miller and Luke Besser">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">Nakamoto Founders Jack Miller and Luke Besser</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/team-2.jpg" 
+                                     srcset="images/portfolio/team-2.jpg 1x" alt="The Nakamoto Team Stands With Crypto">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">The Nakamoto Team Stands With Crypto</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/noggles.jpg" 
+                                     srcset="images/portfolio/noggles.jpg 1x" alt="Miller poses with the Noggles">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">Miller poses with the Noggles</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/biolab.jpg" 
+                                     srcset="images/portfolio/biolab.jpg 1x" alt="The Nakamoto Team at Chan Zuckerberg Biohub in Chicago">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">The Nakamoto Team at Chan Zuckerberg Biohub in Chicago</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+                <div class="column">
+                    <div class="folio-item" data-animate-el>
+                        <div class="folio-item__thumb">
+                                <img src="images/portfolio/team-3.jpg" 
+                                     srcset="images/portfolio/team-3.jpg 1x" alt="Nakamoto Team celebrating Bitcoin Pizza Day">
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">Our Team</div>
+                            <h4 class="folio-item__title">Nakamoto Team celebrating Bitcoin Pizza Day</h4>
+                        </div>
+                        <div class="folio-item__caption">
+                            <p>Nakamoto is not just a team – it's a family dedicated to shaping the future.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+    
+            </div> <!-- folio-list -->
+<!--
+            <div class="video-block">
+                <span class="video-block__bg-left"></span>
+                <span class="video-block__bg-right"></span>
+
+                <div class="video-block__content">
+                    <a href="https://player.vimeo.com/video/14592941?color=00a650&title=0&byline=0&portrait=0" class="video-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M7 6L7 18 17 12z"></path></svg>
+                    </a>
+
+                    <p class="video-caption">
+                        Watch Video
+                    </p>
+                </div>
+            </div>  end video-block -->
+
+               
+    
+                </div> <!-- end column -->
+
+        </section> <!-- end s-works -->
+    </div> <!-- end -s-pagewrap -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Three JS
+    ================================================== -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+	<script src="js/3d-logo.js"></script>
+
+</body>
+</html>

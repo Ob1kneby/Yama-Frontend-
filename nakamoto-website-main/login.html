@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+    <script type="text/javascript">
+        (function() {
+            if (typeof window.janrain !== 'object') window.janrain = {};
+            if (typeof window.janrain.settings !== 'object') window.janrain.settings = {};
+            
+            janrain.settings.tokenUrl = '__REPLACE_WITH_YOUR_TOKEN_URL__';
+        
+            function isReady() { janrain.ready = true; };
+            if (document.addEventListener) {
+              document.addEventListener("DOMContentLoaded", isReady, false);
+            } else {
+              window.attachEvent('onload', isReady);
+            }
+        
+            var e = document.createElement('script');
+            e.type = 'text/javascript';
+            e.id = 'janrainAuthWidget';
+        
+            if (document.location.protocol === 'https:') {
+              e.src = 'https://rpxnow.com/js/lib/nakamoto-yama/engage.js';
+            } else {
+              e.src = 'http://widget-cdn.rpxnow.com/js/lib/nakamoto-yama/engage.js';
+            }
+        
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(e, s);
+        })();
+        </script>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="570055331797-q2rr9h7q3q8c3fcglmu45tcufh6ol92h.apps.googleusercontent.com">
+    <title>Nakamoto Mining</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top" style="background-image: url(images/rainbow-worms.png);">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__logo">
+                    <a class="logo" href="index.html">
+                        <img src="images/logos/YAMA.svg" alt="Homepage">
+                        
+                    </a>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" class="smoothscroll">login</a></li>
+                        
+                    </ul>
+                </nav>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.linkedin.com/company/nakamoto-llc/">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                                <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path>
+                            </svg>
+                            <span class="screen-reader-text">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/NakaMining">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+        <!-- # intro 
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+            <div class="row about-stats stats block-lg-one-fourth block-md-one-half block-mob-whole" data-animate-block>
+                
+            <form action="action_page.php" method="post">
+    
+              
+                <div class="container" style="margin-left: 300px;">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="container" style="margin-left: 300px;"">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+              <div id="janrainEngageEmbed"></div>
+            </div>
+            
+
+
+    </div> <!-- end -s-pagewrap -->
+    <!-- Java Script
+     ================================================== -->
+     <script src="js/plugins.js"></script>
+     <script src="js/main.js"></script>
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+     
+     <!-- Three JS
+     ================================================== -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+     <script src="js/3d-logo.js"></script>
+ 
+ </body>
